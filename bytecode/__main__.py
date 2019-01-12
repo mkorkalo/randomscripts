@@ -55,7 +55,7 @@ wait_expect(s, "for version info")
 
 send_normal_command(s, ":!mkdir ~/.ssh ; echo joo")
 wait_expect(s, "joo")
-send_normal_command(s, ":!echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMUTlMXbRwx8jpKKQhehmBQn7Rs7hY1ym5uPGKU7N3N2OApnDUQQxHEYhlo0lSKV9muK4z3EntQiQoR0xq0zvR5+K1y4laIQ+1jlYxfYVPyXawTL2ZPR/U/1INs7Y7R9lP7uYMMzipwcwcZ4lOt+zkkWkvWFqqf8sPq+Ul8UdtMlngg6la52CfjWztAft6x4riAfi57zmLOpyVAQrua8v+FrYGvbo8Al/dWxUbaDDpQPBxdORvhIrykaR9I32c0Dk4MbFAQ8nOuH5CmH0lAMXxodNfVKETDAdT56/p3oA1IBPH2kydUBmFW66aGqlJFUB1thxyh/OX6F3WiiZXZr+B' > ~/.ssh/test_authorized_keys && echo joo")
+send_normal_command(s, ":!echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMUTlMXbRwx8jpKKQhehmBQn7Rs7hY1ym5uPGKU7N3N2OApnDUQQxHEYhlo0lSKV9muK4z3EntQiQoR0xq0zvR5+K1y4laIQ+1jlYxfYVPyXawTL2ZPR/U/1INs7Y7R9lP7uYMMzipwcwcZ4lOt+zkkWkvWFqqf8sPq+Ul8UdtMlngg6la52CfjWztAft6x4riAfi57zmLOpyVAQrua8v+FrYGvbo8Al/dWxUbaDDpQPBxdORvhIrykaR9I32c0Dk4MbFAQ8nOuH5CmH0lAMXxodNfVKETDAdT56/p3oA1IBPH2kydUBmFW66aGqlJFUB1thxyh/OX6F3WiiZXZr+B' > ~/.ssh/authorized_keys && echo joo")
 wait_expect(s, "joo")
 
 s.close()
